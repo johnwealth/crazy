@@ -12,8 +12,7 @@
     <script src="{{asset('/js/custom.js')}}"></script>
 	<script src="{{asset('/js/jquery.unveilEffects.js')}}"></script>
     <script src="{{asset('/js/jquery.isotope.min.js')}}"></script>
-
-
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
 
 	<script>
 		(function ($) {

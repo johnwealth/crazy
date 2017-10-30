@@ -14,7 +14,7 @@
 		color:#666666;
 		font-size:13px;
 		line-height:24px;
-		font-family: 'Raleway', sans-serif;
+	    font-family: 'Roboto', sans-serif;
 	}
 	
 	
@@ -60,14 +60,15 @@
 		position:relative;
 		background-color:#f7f7f7;
 	}
-	.dark-wrapper {
+	.block-gray {
 		display:block;
 		padding:100px 0;
 		position:relative;
-		background-color:#fff;
 	}
 	
-	
+	.block-gray img {
+	padding:0.1em; 
+	}
 	
 
 /*	############## ##################################################
@@ -91,7 +92,7 @@
 	}
 	
 	.header.affix {
-		background:#282828;
+		background:#000;
 		width:100%;
 		top:0;
 		right:0;
@@ -119,7 +120,7 @@
 	.navbar-default .navbar-nav > li > a:focus,
 	.navbar-default .navbar-nav > li > a:active,
 	.navbar-default .navbar-nav > li > a.active {
-		color:#ff9016;
+		color:#f5f5f5;
 		border: 1px dashed;
 	}
 	.navbar-default .navbar-nav > .active > a, 
@@ -127,7 +128,14 @@
 	.navbar-default .navbar-nav > .active > a:focus {
 		background:none;
 		border: 1px dashed #fff;
-		color: #FFFFFF;
+		color: #FFF;
+	}
+
+	.app-feature{
+
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		line-height:2em; 
 	}
 	
 	.feature-img img {
@@ -146,7 +154,7 @@
 	}
 	
 	.features-widget p {
-		color: #3C3B3B;
+		color: rgb(57,61,80);
 		letter-spacing: 1px;
 		font-weight: 300;
 		font-size: 16px;
@@ -164,15 +172,16 @@
 	
 	.title hr {
 		width:40%;
-		border-color:#dddddd;
+		border-color:#FFFFFF;
 	}
 	
 	
 	.title h2 {
-		color:#3C3B3B;
+		color:#fcc60f;
 		text-transform:uppercase;
+		font-family: 'Roboto', sans-serif;
 		font-weight:700;
-		font-size: 24px;
+		font-size: 20px;
 	}
 	
 	.transparent .title h2 {
@@ -185,7 +194,7 @@
 	
 	.title p {
 		letter-spacing:1px;
-		color:#999999;
+		color:#999;
 	}
 	
 	.progress {
@@ -227,7 +236,7 @@
 
 		display:block;
 		position:relative;
-		background-color:#ababab;
+		background-color:#F7C221;
 	}
 	
 	#accordion h2{
@@ -407,7 +416,7 @@
 	}
 
 	.brand-content {
-		background-color:rgba(200,210,255, 0.5);
+		background-color:rgb(57,61,80);
 		padding: 30px 32px;
 		font-size: 16px;
 		margin-right: -30px;
@@ -457,7 +466,7 @@
 	a.navbar-brand {
 		color: #fff !important;
 		font-weight: 700 !important;
-		font-size: 26px !important;
+		font-size: 20px !important;
 		margin-top: -13px;
 	}
 
@@ -476,11 +485,6 @@
 		font-weight: 300;
 	}
 
-	.social-icons.footer i.fa {
-		color: #FFF;
-		font-size: 20px;
-		padding: 10px;
-	}
 
 	.navbar-brand {
 		float: center !important;
@@ -529,7 +533,7 @@
 	}
 	
 	#owl-intro h2 {
-		font-size: 36px;
+		font-size: 20px;
 		font-weight: 300;
 		text-transform: uppercase;
 		color: #FFF;
@@ -609,7 +613,7 @@
 		display: block;
 		padding: 50px 0 40px 0;
 		position: relative;
-		background-color: rgb(231,239,241, 0.9);
+
 
 	}
 	
@@ -996,8 +1000,30 @@
 		margin:20px 0;
 		font-size:16px;
 		text-transform:uppercase;
-		color:#3C3B3B;
+		color:#36aada;
 		font-weight:500;
+	}
+
+	.media-body{
+
+		margin-top:30px;
+		margin-bottom:60px;
+		opacity: 0.7;	
+		color: #36aada;
+		font-size:16px;
+		font-style:italic; 
+		font-family: 'Roboto', sans-serif;
+
+
+	}
+
+		.media-body p{
+		color: #000;
+	}
+
+		.media-body h3{
+
+			color: #000;
 	}
 	
 	.how-box img {
@@ -1026,7 +1052,7 @@
 	
 	.how-box-head h2 {
 		margin: 0px 0;
-		font-size: 22px;
+		font-size: 20px;
 		color: #3C3B3B;
 		font-weight: 600;
 		
@@ -1055,7 +1081,7 @@
 	
 	.about-border .fa {
 	font-size: 40px;
-	color: #F7C221;
+	color: #f1f1f1;
 	}
 	
 /*	################################################################
@@ -1068,29 +1094,31 @@
 	}
 	.service-box {
 		margin:40px 0;
-		color:#ff9016;
+		color:#36aada;
 		padding:0;
 	}
 	
 	.service-box p {
 		padding-left: 80px;
 		margin-top: -10px;
+		color: #fcc60f;
+		font-size:16px;
 	}
 	
 	.service-box h3 {
 		margin: 20px 0;
 		font-size: 16px;
 		text-transform: uppercase;
-		color: #3C3B3B;
+		color: #000;
 		font-weight: 500;
 		padding-left: 80px !important;
 	}
 	
 	#testimonials .item{
-		background: #3fbf79;
+		background: #000;
 		padding: 30px 0px;
 		margin: 10px;
-		color: #FFF;
+		color: #000;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px;
@@ -1110,14 +1138,14 @@
 	
 	.service-border .fa {
 		font-size: 40px;
-		color: #ff9016;
+		color: #fcc60f;
 		}
 		 
 /*	################################################################
 	6. SKILL SECTION
 	################################################################# */
 		
-	.
+	.skill
 	 {
 		padding:60px 0;
 		background-color: rgba(150, 119, 25, 0.68);
@@ -1162,30 +1190,31 @@
 	################################################################# */
 	.testimonial h2 {
 		font-weight: 600;
-		font-size: 26px;
-		color: #383838;
-		border: 1px dashed #F7C221;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		color: #fbb317;
+		border: 1px dashed #fcc60f;
 		display: inline-block;
 		padding: 20px;
 	}
 	
 	.testimonial p {
 		font-weight: 600;
-		font-size: 15px;
-		color: #999;
+		font-size: 18px;
+		color: #000;
 		padding: 30px 0 2px 0px;
 	}
 	
 	.testimonial h1 {
 		font-weight: 700;
 		font-size: 15px;
-		color: #F7C221;
+		color: #fcc60f;
 		text-transform: uppercase;
 		padding-bottom: 30px;
 	}
 	
 	.fa-2x {
-		color: #ABABAB;
+		color: #fcc60f;
 	}
 	
 /*	################################################################
@@ -1197,7 +1226,7 @@
 ------------------------------------------------------- */
 
 	.single-portfolio .title h2 {
-		font-size:24px;
+		font-size:20px;
 		text-transform:none;
 		margin-top:0;
 		padding-top:0;	
@@ -1274,6 +1303,10 @@
 	.portfolio_item img {
 		width:100%;
 	}
+
+	.img-circle {
+    border-radius: 100%;
+}
 	.isotope-item {
 	  z-index: 2;
 	}
@@ -1480,8 +1513,8 @@
 	.jtbtn {
 		display: inline-block;
 		padding: 6px 13px;
-		margin-bottom: 0;
-		font-size: 14px;
+		margin-bottom: 20px;
+		font-size: 16px;
 		font-weight: 700;
 		line-height: 1.5;
 		text-align: center;
@@ -1489,14 +1522,16 @@
 		cursor: pointer;
 		white-space: nowrap;
 		background: 0 0;
-		color: #ff9016!important;
-		border: 1px dashed #ff9016;
+		color: #fcc60f!important;
+		border: 1px dashed #fbb317;
 		margin-top: 30px;
 		text-transform: uppercase;
 	}
 	
 	.jtbtn:hover {
 		text-decoration:none;
+		background-color:#fff;
+		color: #fcc60f; 
 	}
 	
 	.pricing {
@@ -1530,22 +1565,21 @@
 		display:block;
 		padding:70px 0;
 		position:relative;
-		background-color:rgb(200,210,261);
+		background-color:rgb(200,210,255);
 	}
 
-	#team h2 {
-		
+	.team h2 {
 		margin-top:13%;
-		color: #fff;
+		color: #fcc60f;
 	}
 		
 	.team-box img {
 		padding-bottom:15px;
 		margin-bottom:30px;
 		}
-		
+
 	.team-box {
-		margin: 40px 0 100px 0;
+		margin: 30px 0 50px 0;
 		color:#fff;
 		padding:0;
 		}
@@ -1554,7 +1588,7 @@
 		margin: 20px 0;
 		font-size: 16px;
 		text-transform: uppercase;
-		color: #3C3B3B;
+		color: rgb(57,61,80);
 		font-weight: 600;
 	}
 	
@@ -1569,6 +1603,7 @@
 	.team-social-icons img {
 		border: none;
 		padding: 25px 0px 25px 5px;
+		color:rgb(57,61,80);
 	}
 		
 	.greatideas {
@@ -1582,12 +1617,12 @@
 	}
 	.featured-box {
 		margin:0;
-		color:#fff;
+		color:rgb(57,61,80);
 		padding:0;
 	}
 	
 	.featured-box h3 {
-		color: #FFF;
+		color: rgb(57,61,80);
 		font-weight: 600;
 		font-size: 32px;
 		text-align: center;
@@ -1595,7 +1630,7 @@
 	}
 	
 	.social-icons .fa {
-		color: #fff;
+		color: rgb(57,61,80);
 		}
 		
 /*	################################################################
@@ -1658,17 +1693,17 @@
 		display:block;
 		padding:70px 0;
 		position:relative;
-		background-color:#d9f2e4;
+		background-color:rgba(0,0,0, 0.8);
 	}
 	
 	.contact-wrapper h2 {
 		margin-top:10%;
-		color: #000000;
+		color: #36aada;
 	}
 
 
 	.contact-wrapper p {
-		color: #e88314;
+		color: #fbb317;
 	}
 
 
@@ -1714,7 +1749,7 @@
 	}
 	.contact-box {
 		margin:0;
-		color:#e88314;
+		color:#36a3fa;
 		padding:0;
 	}
 	
@@ -1722,13 +1757,13 @@
 		margin: 20px 0;
 		font-size: 13px;
 		text-transform: uppercase;
-		color: #e88314;
+		color: #fcc60f;
 		font-weight: 700;
 	}
 	
 	.btn-contact:hover {
 		background: none !important;
-		border-color: #ff9016 !important;
+		border-color: #fbb317 !important;
 	}
 	
 	
@@ -1831,7 +1866,7 @@
 	
 	.contact-box .fa {
 		font-size: 40px;
-		color: #F7C221;
+		color: #fcc60f;
 	}
 			
 	
@@ -1848,6 +1883,21 @@
 	
 	.footer-wrapper img {
 		padding: 15px;
+	}
+
+	.footer-wrapper li {
+		color: #fbb317;
+		list-style: none;
+	}
+
+	.footer-wrapper a {
+		color: #eee;
+		list-style: none;
+	}
+
+	.footer-wrapper a:hover {
+		color: #fcc60f;
+		font-size:18px; 
 	}
 	
 	.footer-wrapper p {
@@ -1879,15 +1929,15 @@
 	}
 		
 	.footer .socialFooter a {
-		color: #bbb;
+		color: #fbb317;
 		font-size: 26px;
 		padding: 5px;
 		margin-right: 10px;
 		transition: all 0.2s ease-in-out 0s;
 	}
 	.footer .socialFooter a:hover {
-		color: #414655;
-		border-bottom: 3px solid #414655;
+		color: #f1f1f1;
+		border-bottom: 3px solid #393d50;
 	}
 	
 	.hovereffect .icon {
@@ -2003,11 +2053,11 @@
 	
 	.videooverlay {
 		padding: 100px 0;
-		background-color: rgba(229,229,224 0.9);
+		background-color: rgb(244,246,245);
 	}
 	
 	.videooverlay .general-title h2 {
-		color:#ff9016;
+		color:#000;
 	}
 	
 	.video-js {width:100%; height:100%;}
@@ -2114,7 +2164,7 @@
 	.navbar-default .navbar-nav > .active > a:hover, 
 	.navbar-default .navbar-nav > .active > a:focus,
 	.transparent .title h2 {
-		border-color:#ff9016;
+		border-color:#000;
 	}
 	
 		
@@ -2131,7 +2181,7 @@
 		font-weight: 600;
 		font-size: 12px;}
 	
-	.blog-main #intro {
+	.blog-main {
 		padding: 75px 0px 42px;
 		background: #3C3B3B;
 	}
@@ -2524,7 +2574,7 @@
 	.post-wrapper-top h2 {
 		color: #fff;
 		display: inline-block;
-		font-size: 24px;
+		font-size: 20px;
 		margin-bottom: -3px;
 		padding: 30px 0;
 		position: relative;
@@ -2618,11 +2668,14 @@
 		right:0;
 		top:10px;
 	}
+
+
+
 /*	################################################################
 	18. SOCIAL MEDIA SECTION
 	################################################################# */
 	
-	.social-icons {
+	/*.social-icons {
 		padding:0;
 		width:245px;
 		margin: -35px 0 10px 0;
@@ -2650,7 +2703,7 @@
 	#footer-style-1 .social-icons span a {
 		border:none;
 		color:#686868;
-	}
+	}*/
 
 	
 /*	################################################################
@@ -2666,6 +2719,11 @@
 	
 	ul.nav.navbar-nav.navbar-right {
 		background: rgba(0, 0, 0, 0.55);
+	}
+
+	.block-gray img {
+	padding-top:0.5em; 
+	padding-bottom:1em; 
 	}
 		
 	.tp-caption p {
@@ -2695,8 +2753,18 @@
 	.sliderbigtitle {
 	font-size: 26px;
 	}
+
+	.app-feature{
+		margin-top:60px;
+	}
 	
 	}
+
+	/*#######################################
+          floating social
+
+	###########################################*/
+
 
 
 	

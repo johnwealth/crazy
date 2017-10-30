@@ -1,15 +1,22 @@
 @extends('layouts.app')
+@section('title', 'Agent')
+@section('content')
 
-@section('content') 
-
-
-
-<section id="accordion" class="accordion-group">
-     <div class="container">
-            <div class="title text-center">
-                <h2>Work with Us</h2>
+    
+  
+            <section id="contact" class="contact-wrapper">
+            <div class="tp-dottedoverlay twoxtwo"></div>
+                  <div class="title text-center">
+                <h2>Be our Agents</h2>
+                <p>Want to work with us? Link up here!</p>
                 <hr>
-            </div><!-- end title -->
+               </div>
+            </div>
+        </div>
+        </div>
+    </section><!-- end slider-wrapper -->  
+          
+<section id="accordion" class="accordion-group">
         <div class="container">
             <div class="media row">
             <div class="col-sm-8 col-sm-offset-2">
@@ -116,8 +123,14 @@
                          </div>
                         </div>
                       </div><!-- end accordion -->
-                  </div><!-- end accordion first -->
-              </div>
-           </div>
-        </div>
-        @endsection
+            
+    </section><!-- end grey-wrapper-->
+  
+
+        
+    
+    <!-- PORTFOLIO SECTION -->     
+   
+ <!-- SECTION CLOSED -->
+     @endsection
+    

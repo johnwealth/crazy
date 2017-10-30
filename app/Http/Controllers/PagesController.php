@@ -43,26 +43,27 @@ class PagesController extends Controller
 
      public function index()
     {
-        return view('index');
+        return view('pages.index');
     }
 
 
 
      public function practice()
     {
-        return view('practice');
+        return view('pages.practice');
     }
 
 
      public function about()
     {
-        return view('about');
+        $teams = Team::all();
+        return view('pages.about', compact('teams'));
     }
 
 
     public function agent()
     {
-        return view('agent');
+        return view('pages.agent');
     }
 
 
@@ -70,7 +71,7 @@ class PagesController extends Controller
 
     public function video()
     {
-        return view('video');
+        return view('pages.video');
     }
 
 
@@ -79,7 +80,7 @@ class PagesController extends Controller
      public function blog()
     {
             $posts = Post::simplePaginate(3);
-        return view('blog')->withPosts($posts);
+        return view('post.blog')->withPosts($posts);
     }
 
 
@@ -91,8 +92,8 @@ class PagesController extends Controller
 
         if($post){
 
-          $comment = Comment::where('post_id', $post->id)->get();
-          return view('blog-single', compact('post', 'comment'));
+          //$comment = Comment::where('post_id', $post->id)->get();
+          return view('post.blog-single', compact('post', 'comment'));
         }
 
       }
@@ -115,16 +116,8 @@ class PagesController extends Controller
 
       public function getContact()
     {
-        return view('contact');
+        return view('pages.contact');
     }
-
-       public function getTeam()
-    {
-          
-        $teams = Team::all();
-        return view('team')->withTeams($teams);
-    }
-
 
 
 
@@ -139,6 +132,7 @@ class PagesController extends Controller
        ]);
 
       $data = array(
+        'name'=>$request->name,
         'email' => $request->email,
         'subject' => $request->subject,
         'bodyMessage' => $request->message

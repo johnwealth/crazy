@@ -15,10 +15,10 @@ class BlogController extends Controller
     public function index(){
 
     	$posts = Post::simplePaginate(3);
-    	return view('index')->withPosts($posts);
+    	return view('pages.index')->withPosts($posts);
     }
 
-
+/*
     	 public function Comment(Request $request){
 
         $comment = strip_tags($request->comment);
@@ -37,7 +37,7 @@ class BlogController extends Controller
 
   
      }
-
+*/
 
       public function show($id){
 
@@ -47,14 +47,14 @@ class BlogController extends Controller
 
         if($post){
 
-          $comment = Comment::where('post_id', $post->id)->get();
-          return view('post.single', compact('post', 'comment'));
+         // $comment = Comment::where('post_id', $post->id)->get();
+          return view('post.blog-single', 'post');
         }
 
       }
 
         
-       return redirect()->route('post.single');
+       return redirect()->route('post.blog-single');
 
     }
 
@@ -63,8 +63,8 @@ class BlogController extends Controller
 
     	$post = Post::findBySlug($slug);
 
-        $comment = Comment::where('post_id', $post->id)->get();
+       // $comment = Comment::where('post_id', $post->id)->get();
 
-    	return view('blog-single', compact('post', 'comment'));
+    	return view('post/blog-single')->withPost($post);
     }
 }

@@ -6,7 +6,8 @@
     
        <div class="tp-banner-container">
          
-            <div class="tp-dottedoverlay twoxtwo"></div>
+            <div class="tp-dottedoverlay twoxtwo">
+            <img src="#"></div>
                     <section id="contact" class="contact-wrapper">
                   <div class="title text-center">
                 <h2>Contact Us</h2>
@@ -22,7 +23,7 @@
      <section id="features" class="feature-wrapper">
      <div class="container">
   <div data-scroll-reveal="enter from the bottom after 0.3s" class="title text-center" data-scroll-reveal-id="2" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-                        <div class="contact_tab text-center">
+                  <div class="contact_tab text-center">
                     <ul id="myTab" class="container text-center nav nav-tabs" role="tablist">
                         <li class="active"><a href="#tab1" role="tab" data-toggle="tab">Contact Details</a></li>
                         <li><a href="#tab2" role="tab" data-toggle="tab">Location Maps</a></li>
@@ -30,9 +31,14 @@
            <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
                         <div class="container">
-                        <p><b>Send us your request, we will feed you back like </b> <i> "Just In Time"</i></p>
-                            <div id="message"></div>
-                            <form id="contactform" action="contact.php" name="contactform" method="post" data-scroll-reveal="enter from the bottom after 0.4s">
+                        <p><b>Send us your request, we will get back to you within</b> <i> 24hrs</i></p>
+                            <div id="message"><ul>
+                         @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                          @endforeach
+                           </ul></div>
+                            <form id="contactform" action="{{ url('contact') }}" name="contactform" method="POST" data-scroll-reveal="enter from the bottom after 0.4s">
+                              {{ csrf_field() }}
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <input type="text" name="name" id="name" class="form-control" placeholder="Name"> 
                                 </div>
@@ -47,7 +53,7 @@
                                     <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Message"></textarea>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-lg btn-contact btn-primary">SUBMIT</button>
+                                    <button type="submit" value="SEND" id="submit" class="jtbtn ">SUBMIT</button>
                                 </div>
                             </form> <!-- End Form -->
                         </div> <!-- End Container -->
@@ -60,12 +66,10 @@
         </div><!-- /contact_tab --> 
      </div>
 </div><!-- end col-lg-6 -->
-
+</section>
     <!--/ SERVICE SECTION -->   
     <section id="services" class="white-wrapper">
         <div class="container">
-            <div class="title text-center">
-                <div class="container">
             <div class="title text-center">
                 <div class="clearfix"></div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -74,7 +78,8 @@
                         <h2>info@screenbook.ng</h2>
                     </div>
                 </div>
-        
+    
+
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="contact-box" data-scroll-reveal="enter from the bottom after 0.6s">
                         <a title="" href="#"><i class="fa fa-map-marker
@@ -84,29 +89,15 @@
                 </div>
         
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="contact-box"  data-scroll-reveal="enter from the bottom after 0.6s">
+                    <div class="contact-box"  data-scroll-reveal="enter     from the bottom after 0.6s">
                          <a title="" href="#"><i class="fa fa-phone aligncenter"></i></a>
                         <h2>(+234) 0813-618-1285 </h2>
                     </div>
                 </div>
+              </div>
             </div> <!-- end title -->
         </div><!-- end container -->
     </section><!-- Service and Testimonial End --> 
-    
- 
         
-       </div>
-      </div>
-      </div>
-
-     </div>
-    </div>
-   </div>
-    </section><!--/ Video Parallex  End -->  
-        
-    
-    <!--/ PORTFOLIO SECTION -->     
-   
- <!-- SECTION CLOSED -->
      @endsection
     

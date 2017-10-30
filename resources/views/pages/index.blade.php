@@ -11,7 +11,7 @@
                 <ul>
        			  <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
                         <!-- MAIN IMAGE -->
-                        <img src="{{asset('/demos/slider2.jpg')}}"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <img src="{{asset('/demos/slider2.jpg')}}" class="img-responsive"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
         				<div class="tp-dottedoverlay twoxtwo"></div>
  
                         <!-- LAYER NR. 3 -->
@@ -24,7 +24,7 @@
                             data-speed="1000"
                             data-start="500"
                             data-easing="Back.easeInOut"
-                            data-endspeed="300"><hr class="topline"><h2>You Like to "Jam" JAMB <br>at One Sitting?</h2><hr class="bottomline">
+                            data-endspeed="300"><hr class="topline"><h2>Do You Want to "Jam" JAMB <br>at One Sitting?</h2><hr class="bottomline">
                         </div>
     
                         <!-- LAYER NR. 4 -->
@@ -37,8 +37,8 @@
                             data-speed="2200"
                             data-start="500"
                             data-easing="Back.easeInOut"
-                            data-endspeed="300"><p>Join The Screen Trybe and Prep like a newSchool!</p>
-                            <a class="jtbtn" href="#">TRY IT FOR FREE</a>
+                            data-endspeed="300"><p>Join The Screen Trybe<br>and Prep like a newSchool!</p>
+                            <a class="jtbtn" align-right href="#">TRY IT FOR FREE</a>
                         </div>
                     </li>
                     
@@ -58,7 +58,7 @@
                             data-endspeed="300"
                             data-endeasing="Power1.easeIn"
                             data-captionhidden="on"
-                            style="z-index: 6"><hr class="topline"><h2>Think Virtual Tutor ?<br></h2><hr class="bottomline">
+                            style="z-index: 6"><hr class="topline"><h2>Think Virtual Learning ?<br></h2><hr class="bottomline">
                         </div>
     
                         <!-- LAYER NR. 4 -->
@@ -73,7 +73,7 @@
                             data-endeasing="Power1.easeIn"
                             data-captionhidden="on"
                             style="z-index: 7"><p>...think Screenbook.ng </p>
-                            <a class="jtbtn" align-center href="#">TRY IT FOR FREE</a>
+                            <a class="jtbtn btn" align-center href="#">TRY IT FOR FREE</a>
                         </div>
                     </li>
 					
@@ -107,7 +107,7 @@
                             data-endspeed="300"
                             data-endeasing="Power1.easeIn"
                             data-captionhidden="on"
-                            style="z-index: 7"><p>...making learning rediculously simple!</p>
+                            style="z-index: 7"><p>...making learning super simple!</p>
                         </div>
                     </li>
 		          </ul>
@@ -121,40 +121,73 @@
 	 <section id="features" class="feature-wrapper">
      <div class="container">
   <div data-scroll-reveal="enter from the bottom after 0.3s" class="title text-center" data-scroll-reveal-id="2" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-                        <h2>Why Us ?</h2>
-                        <p>OUR JAMB APP DESIGN AND DEVELOPMENT IS STUDENT ORIENTED</p>
-                        <hr>
+         <div class="container">
+            <div class="title text-center">
+                <h2>Why Us ?</h2>
+                <p>We are in business to teach, mentor and motivate!</p>
+                <hr>
+            </div><!-- end title -->
+        
+            <div class="row">
+                <div data-scroll-reveal="enter from the bottom after 0.3s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-pencil-square-o alignleft"></i></div>
+                        <h3>JAMB Q & A</h3>
+                        <p>Access thousands of JAMB </br>
+                        question with detailed and simplified answers.</p>
                     </div>
-
-    <div data-scroll-reveal="enter from the bottom after 0.4s" class="feature-img">
-                <div class = "col-md-4 col-md-offset-2"><img src="" alt="" /></div>
-                      <div class ="col-md-6">
-                            <h4>Access to thousands of question with simplify answers.</h4>
-                            <ul>
-                              <li><b>Practice on the go!</b></br>
-                              Even as you sit on the toilet slab.</li>
-                              <li><b>Access thousands of JAMB question </b></br>with detailed and simplified answers.</li>
-                              <li><b>Personalize Your study</b></br>
-                               Practice topically or yearly.</li>
-                              <li><b>Time yourself as you Practice</b>
-                              </br>JAMB is just 2hrs 30Min exam.</li>
-                              <li><b>Challenge yourself</b></br>
-                              Join the weekly challenge, beat other to the top.</li>
-                              <li><b>Join the Screen TRYBE</b></br>
-                              Don't go archaic!.</li>
-                              </ul>
-                              <p><a class="jtbtn" href="#">TRY IT FOR FREE</a></p>
-                            </div>
-                          
-                        
-                      </div>
-                    </div>
-            </div>
-         
-            </div><!-- end col-lg-6 -->
+                </div>
             
-         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-           
+                <div data-scroll-reveal="enter from the bottom after 0.6s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-car alignleft"></i></div>
+                        <h3>Practice on the go!</h3>
+                        <p>Prep everywhere even when </br>
+                        you are on the toilet slab.</p>
+                    </div>
+                </div>
+            
+                <div data-scroll-reveal="enter from the bottom after 0.9s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-clock-o alignleft"></i></div>
+                        <h3>Set your time</h3>
+                        <p>Time yourself as you practice</br>
+                              JAMB is just 2hrs exam</p>
+                    </div>
+                </div>
+            </div> <!-- end row 1 -->
+        
+            <div class="row">
+                <div data-scroll-reveal="enter from the bottom after 1.2s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-gamepad alignleft"></i></div>
+                        <h3>Personalize Your study</h3>
+                        <p>You can practice topically or</br>
+                        yearly which    ever way you like it.</p>
+                    </div>
+                </div>
+            
+                <div data-scroll-reveal="enter from the bottom after 1.5s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-trophy alignleft"></i></div>
+                        <h3>Challenge yourself</h3>
+                        <p>Join the weekly challenge,</br>
+                         beat other to the top.</p>
+                    </div>
+                </div>
+            </b>
+                              
+                <div data-scroll-reveal="enter from the bottom after 1.8s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-mobile alignleft"></i></div>
+                        <h3>Screen TRYBE</h3>
+                        <p>Join the Screen Trybe,</br>
+                          Don't go archaic!.</p>
+                    </div>
+                </div>
+                <p><a class="jtbtn" href="#">TRY IT FOR FREE</a></p>
+            </div> <!-- end row 2 -->
+                                  
                    
    </div><!-- end col-lg-6 -->
   </div><!-- end container -->
@@ -174,65 +207,7 @@
        
     <!--/ SERVICE SECTION -->   
     <section id="services" class="white-wrapper">
-        <div class="container">
-            <div class="title text-center">
-                <h2>Services we offer</h2>
-                <p>ETIAM DIGNISSIM LEO VESTIBULUM VOLUTPAT MORB</p>
-                <hr>
-            </div><!-- end title -->
-        
-            <div class="row">
-                <div data-scroll-reveal="enter from the bottom after 0.3s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="service-box">
-                        <div class="service-border"><i class="fa fa-lightbulb-o alignleft"></i></div>
-                        <h3>Design & Development</h3>
-                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    </div>
-                </div>
-            
-                <div data-scroll-reveal="enter from the bottom after 0.6s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="service-box">
-                        <div class="service-border"><i class="fa fa-laptop alignleft"></i></div>
-                        <h3>VIDEO PRODUCTION</h3>
-                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    </div>
-                </div>
-            
-                <div data-scroll-reveal="enter from the bottom after 0.9s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="service-box">
-                        <div class="service-border"><i class="fa fa-headphones alignleft"></i></div>
-                        <h3>24/7 SUPPORT</h3>
-                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    </div>
-                </div>
-            </div> <!-- end row 1 -->
-        
-            <div class="row">
-                <div data-scroll-reveal="enter from the bottom after 1.2s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="service-box">
-                        <div class="service-border"><i class="fa fa-mobile alignleft"></i></div>
-                        <h3>MOBILE APPS</h3>
-                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    </div>
-                </div>
-            
-                <div data-scroll-reveal="enter from the bottom after 1.5s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="service-box">
-                        <div class="service-border"><i class="fa fa-shopping-cart alignleft"></i></div>
-                        <h3>ONLINE SHOPPING</h3>
-                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    </div>
-                </div>
-            
-                <div data-scroll-reveal="enter from the bottom after 1.8s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                    <div class="service-box">
-                        <div class="service-border"><i class="fa fa-gears alignleft"></i></div>
-                        <h3>SOCIAL MEDIA</h3>
-                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    </div>
-                </div>
-            </div> <!-- end row 2 -->
-                   
+       
     <!-- TESTIMONIAL SECTION -->              
             <div class="testimonial text-center">
                 <h2 class="three" data-scroll-reveal="enter from the bottom after 0.2s">And What They Say</h2>
@@ -260,7 +235,31 @@
             </div><!-- end customnav -->
        </div> <!-- end container -->
     </section><!-- Service and Testimonial End --> 
-    
+            <section>
+        <div class="container"> 
+         <div data-scroll-reveal="enter from the bottom after 0.3s" class="title text-center" data-scroll-reveal-id="2" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+            <div class="block-gray">
+                 
+                     <div class="general-title text-center">
+                     <div class="title">
+                    <h2>Patners</h2>
+                    <hr>
+                    </div>
+                </div>
+                      <div class="row">  
+                      <div class="col-md-10 col-md-offset-1">
+                            <div class="logos-carousel">
+                                <img src="{{asset('/demos/wblogo.jpg')}}" alt="" />
+                                <img src="{{asset('/demos/Gems-logo.png')}}" alt="" />
+                                <img src="{{asset('/demos/logo-asovilla.png')}}" alt="" />
+                                <img src="{{asset('/demos/fmiti.jpg')}}" alt="" />
+                                <img src="{{asset('/demos/sourcegig.png')}}" alt="" />
+                            </div><!-- Logos Carousel -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
  
         
    

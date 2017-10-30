@@ -3,8 +3,8 @@
     <!-- end Google Font -->
     
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,500,600,700,800,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <!-- owl carousel SLIDER -->
     <link rel="stylesheet" href="{{asset('/css/owl.carousel.css')}}">
     <!-- end awesome icons -->
@@ -25,7 +25,6 @@
 
 	<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('/rs-plugin/css/settings.css')}}" media="screen" />
-
 
   <!-- Bootstrap core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

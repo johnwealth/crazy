@@ -26,10 +26,10 @@ class Post extends Model
     }
 
 
-    public function comments(){
+  /*  public function comments(){
 
     	return $this->hasMany('App\Comment');
-    }
+    }*/
 
     public static function findBySlug($slug){
 

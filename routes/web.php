@@ -18,16 +18,17 @@ Auth::routes();
 
 Route::get('contact' , 'PagesController@getContact')->name('contact');
 Route::post('contact' , 'PagesController@postContact')->name('contact');
-
 Route::get('about' , 'PagesController@about')->name('about');
 
 
 
 Route::get('single/{$id}' , 'PagesController@blogSingle')->name('single');
 
-Route::post('add/comment' , [ 'as'=>'comment', 'uses'=>'BlogController@Comment']);
+/*Route::post('add/comment' , [ 'as'=>'comment', 'uses'=>'BlogController@Comment']);*/
 
-Route::get('comment/{post_id}' , [ 'as'=>'comment', 'uses'=>'PagesController@addComment']);
+/*Route::get('comment/{post_id}' , [ 'as'=>'comment', 'uses'=>'PagesController@addComment']);*/
+
+
 
 Route::get('tutorial', 'PagesController@video')->name('video');
 
